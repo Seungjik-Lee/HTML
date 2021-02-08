@@ -10,46 +10,64 @@
             color: blue;
             text-decoration: none;
         }
+
+        input[type=checkbox]:checked+div {
+            height: 600px;
+        }
+
+        div {
+            overflow: hidden;
+            width: 650px;
+            height: 0;
+
+            /* 변환 효과 적용 */
+            -moz-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
     </style>
 </head>
 
 <body>
     <a id="Back" href="10_introduce.html">돌아가기</a>
     <h1>내가 누구?</h1>
-    <ul>
-        <li>출생
-            <ol>
-                <li>인천 출생 1996~1997</li>
-                <li>서울 이사 1997~1999</li>
-                <li>부산 이사 1999~2001</li>
-                <li>대구 이사 2001~ </li>
-            </ol>
-        </li>
+    <input type="checkbox">
+    <div>
+        <ul>
+            <li>출생
+                <ol>
+                    <li>인천 출생 1996~1997</li>
+                    <li>서울 이사 1997~1999</li>
+                    <li>부산 이사 1999~2001</li>
+                    <li>대구 이사 2001~ </li>
+                </ol>
+            </li>
 
-        <li>출신학교
-            <ul>
-                <li>성산초등학교</li>
-                <li>성곡중학교</li>
-                <li>성서고등학교</li>
-                <li>대구가톨릭대학교 공과대학 전자전기공학부 전자공학전공</li>
-                <li>계명대학교 공과대학 전자공학과</li>
-                </a>
-            </ul>
-        </li>
-    </ul>
-    <h1>졸업작품</h1>
-    <ol>
-        <il><a href="P20200617_203648876_C42FD277-1710-4EE9-9F28-3EB10FA7EFF1.JPG">컬러감지센서1</a></il>
-        <il><a href="P20200617_213319406_0CE69E63-ABFF-4476-9E43-E074E350E619.JPG">컬러감지센서2</a></il>
-        <il><a href="P20200617_213413974_137AA780-D7C0-40EF-9B77-3ADE12DF92D5.JPG">컬러감지센서3</a></il>
-    </ol>
-    <h1>특허출원</h1>
-    <ul>
-        <il><a href="2019발명신고서(POF voltage sensors).pdf"></a>발명신고서</il>
-        <il>파일이 안열림... </il>
-        <il>암튼 특허출원도 한 남자임... </il>
-    </ul>
-
+            <li>출신학교
+                <ul>
+                    <li>성산초등학교</li>
+                    <li>성곡중학교</li>
+                    <li>성서고등학교</li>
+                    <li>대구가톨릭대학교 공과대학 전자전기공학부 전자공학전공</li>
+                    <li>계명대학교 공과대학 전자공학과</li>
+                    </a>
+                </ul>
+            </li>
+        </ul>
+        <h1>졸업작품</h1>
+        <ol>
+            <il><a href="P20200617_203648876_C42FD277-1710-4EE9-9F28-3EB10FA7EFF1.JPG">컬러감지센서1</a></il>
+            <il><a href="P20200617_213319406_0CE69E63-ABFF-4476-9E43-E074E350E619.JPG">컬러감지센서2</a></il>
+            <il><a href="P20200617_213413974_137AA780-D7C0-40EF-9B77-3ADE12DF92D5.JPG">컬러감지센서3</a></il>
+        </ol>
+        <h1>특허출원</h1>
+        <ul>
+            <il><a href="2019발명신고서(POF voltage sensors).pdf"></a>발명신고서</il>
+            <il>파일이 안열림... </il>
+            <il>암튼 특허출원도 한 남자임... </il>
+        </ul>
+    </div>
 </body>
 
 </html>

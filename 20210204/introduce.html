@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Want To Go Home</title>
+    <style>
+        h1:hover {
+            color: violet;
+        }
+        #header h1 {
+            color: red;
+        }
+        #Back {
+            color: blue;
+            text-decoration: none;
+        }
+
+        input[type=checkbox]:checked+div {
+            height: 600px;
+        }
+
+        div {
+            overflow: scroll;
+            width: 650px;
+            height: 0;
+
+            /* 변환 효과 적용 */
+            -moz-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="800">
+        <tr>
+            <th rowspan="4"><img src="댕댕쓰.jpg" width="80px" height="50px" alt=""></th>
+            <th colspan="5">이력서</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">성명</td>
+            <td rowspan="2">이승직(李承稷) </td>
+            <td colspan="2">주민등록번호</td>
+        </tr>
+        <tr>
+            <td colspan="2">961021 - Top Secret</td>
+        </tr>
+        <tr>
+            <td colspan="4">생년월일 : 1996년 10월 21생 (만 24세)</td>
+        </tr>
+        <tr>
+            <td>주 소</td>
+            <td colspan="4">대구광역시 달서구 신당동 성서계대 어딘가 <a
+                    href="https://map.naver.com/v5/?c=14303637.2164337,4280616.9033979,14,0,0,0,dh">클릭!</a></td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td>전화번호</td>
+            <td>010 - 6861 - 6427</td>
+            <td>전자우편</td>
+            <td>sungjik96@naver.com</td>
+        </tr>
+        <tr>
+            <td>학력</td>
+            <td colspan="2"><a href="http://newcms.kmu.ac.kr/ee/index.do"> 계명대학교 공과대학 전자공학과</a></td>
+            <td>병역</td>
+            <td>육군병장 만기전역</td>
+        </tr>
+        <tr>
+            <td>자격증</td>
+            <td colspan="2">운전면허, 정보처리기사(예정..준비중ㅠ)</td>
+            <td>경력</td>
+            <td colspan="2">신입(이 되고싶다.)</td>
+        </tr>
+        <tr>
+            <td>세부사항</td>
+            <td colspan="2">자세한 사항은 아래 체크박스를 통해 확인하세요.</a></td>
+        </tr>
+    </table>
+    <h1 id="Header">내가 누구? ↓ 펼쳐보기</h1>
+    <input type="checkbox">
+    <div>
+        <h1>연혁</h1>
+        <ul>
+            <li>출생
+                <ol>
+                    <li>인천 출생 1996~1997</li>
+                    <li>서울 이사 1997~1999</li>
+                    <li>부산 이사 1999~2001</li>
+                    <li>대구 이사 2001~ </li>
+                </ol>
+            </li>
+
+            <li>출신학교
+                <ul>
+                    <li>성산초등학교</li>
+                    <li>성곡중학교</li>
+                    <li>성서고등학교</li>
+                    <li>대구가톨릭대학교 공과대학 전자전기공학부 전자공학전공</li>
+                    <li>계명대학교 공과대학 전자공학과</li>
+                    </a>
+                </ul>
+            </li>
+        </ul>
+        <h1>졸업작품</h1>
+        <ol>
+            <il><a href="P20200617_203648876_C42FD277-1710-4EE9-9F28-3EB10FA7EFF1.JPG">컬러감지센서1</a></il>
+            <il><a href="P20200617_213319406_0CE69E63-ABFF-4476-9E43-E074E350E619.JPG">컬러감지센서2</a></il>
+            <il><a href="P20200617_213413974_137AA780-D7C0-40EF-9B77-3ADE12DF92D5.JPG">컬러감지센서3</a></il>
+        </ol>
+        <h1>특허출원</h1>
+        <ul>
+            <il><a href="2019발명신고서(POF voltage sensors).pdf"></a>발명신고서</il>
+            <il>파일이 안열림... </il>
+            <il>암튼 특허출원도 한 남자임... </il>
+        </ul>
+        <h1>자주가는 유튜브</h1>
+        <ul>
+            <il><iframe width="560" height="315" src="https://www.youtube.com/embed/Hi-2iePfZ_s" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></il>
+            
+            <br>
+            <il>부활 10대 보컬 김동명 커버 모음</il>
+
+        </ul>
+    </div>
+</body>
+
+</html>
