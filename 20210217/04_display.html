@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            background: cornsilk;
+        }
+
+        div {
+            background: chocolate;
+        }
+
+        p {
+            background: palevioletred;
+        }
+
+        #box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        /* 완전히 사라지게 함
+        p:nth-of-type(2) {
+            display: none;
+        }
+        */
+
+        p:nth-of-type(2) {
+            /*뭔가 빈자리가 있어보이게 함(해당 공간 내용만 투명하게)*/
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <span>김두희 ㅡㅡ</span>
+    <div id="box">
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+    <div id="box2">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+    <p>
+        Lorem, ipsum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <p>Lorem, ipsum dolor.</p>
+</body>
+
+</html>
