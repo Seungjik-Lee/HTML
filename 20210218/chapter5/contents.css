@@ -1,0 +1,23 @@
+#content
+{
+    width: 960px;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+
+/*중간 10px 여백을 위하여 한 쪽은 왼쪽*/
+/*나머지 한 쪽은 오른쪽으로 정렬함*/
+#content>#main_section
+{
+    width: 750px;
+    float: left;
+}
+
+#content>#main_aside
+{
+    width: 200px;
+    float: right;
+}
+
