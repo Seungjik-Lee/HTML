@@ -1,5 +1,4 @@
-#content
-{
+#content {
     width: 960px;
     margin: 0 auto;
 
@@ -9,21 +8,44 @@
 
 /*중간 10px 여백을 위하여 한 쪽은 왼쪽*/
 /*나머지 한 쪽은 오른쪽으로 정렬함*/
-#content>#main_section
-{
+#content>#main_section {
     width: 750px;
     float: left;
 }
 
-#content>#main_aside
-{
+#content>#main_aside {
     width: 200px;
     float: right;
 }
 
-#main_section>article.main_article
-{
+#main_section>article.main_article {
     margin-bottom: 10px;
     padding: 20px;
     border: 1px solid black;
+}
+
+/*첫번째 탭*/
+input:nth-of-type(1) {
+    display: none;
+}
+/*input 태그가 체크되어 있지 않다면 옆에 있는 dvi태그를 안보이게 한다.*/
+input:nth-of-type(1)~div:nth-of-type(1) {
+    display: none;
+}
+/*input 태그가 체크되어 있다면 옆에 있는 dvi태그의 display를 block으로 하여 보이게 한다.*/
+input:nth-of-type(1):checked~div:nth-of-type(1) {
+    display: block;
+}
+
+/*두번째 탭*/
+input:nth-of-type(2) {
+    display: none;
+}
+/*input 태그가 체크되어 있지 않다면 옆에 있는 dvi태그를 안보이게 한다.*/
+input:nth-of-type(2)~div:nth-of-type(2) {
+    display: none;
+}
+/*input 태그가 체크되어 있다면 옆에 있는 dvi태그의 display를 block으로 하여 보이게 한다.*/
+input:nth-of-type(2):checked~div:nth-of-type(2) {
+    display: block;
 }
