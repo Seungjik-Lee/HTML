@@ -108,3 +108,32 @@ img {
 #main_lnb>ul>li:last-child>a {
     border-radius: 0 10px 10px 0;
 }
+
+.item
+{
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid black;
+    border-top: none; /*윗 부분만 줄 없앰, 줄 겹침 방지*/
+}
+
+.thumbnail
+{
+    float: left;
+}
+
+.description
+{
+    float: left;
+    margin-left: 10px;
+
+}
+
+/* 긴 글자 생략 3총사 */
+.description>strong{
+    display: block;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
