@@ -12,7 +12,11 @@
             height: 100px;
             background-color: black;
 
-            transition: 2s;
+            /* transition: 2s; */
+
+            transition-property: width, background-color, border-radius;
+            transition-duration: 2s, 5s, 10s;
+            transition-delay: 0s, 2s, 5s;
         }
 
         .wrap:hover>.box {
