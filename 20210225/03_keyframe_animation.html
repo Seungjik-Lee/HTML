@@ -14,9 +14,14 @@
             position: absolute;
         }
 
-        .box{
+        .box {
             animation-name: animation_test;
             animation-duration: 4s;
+
+            /* reverse, alternate, alternate-reverse */
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
         }
 
         .wrap {
