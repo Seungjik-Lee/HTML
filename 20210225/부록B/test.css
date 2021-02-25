@@ -1,0 +1,12 @@
+body {
+  color: #000000;
+  font-size: 16px;
+  margin: 100px;
+}
+a {
+  color: #000000;
+  /* & 내장선택자, 블록 안에서 자신을 가리킴 */
+}
+a:hover {
+  color: #123456;
+}

@@ -1,0 +1,23 @@
+@color: #000000;
+@color_Hover: #123456;
+
+@defaultFontSize: 16px;
+
+@margin: 10px;
+
+body {
+    color: @color;
+    font-size: @defaultFontSize;
+    margin: @margin*10;
+}
+
+a {
+    color: @color;
+
+    /* & 내장선택자, 블록 안에서 자신을 가리킴 */
+    &:hover {
+        color: @color_Hover;
+    }
+
+
+}
